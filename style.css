@@ -64,6 +64,7 @@ button {
     color: white;
     background-color: rgb(84, 83, 83);
     justify-content: center;
+    align-items: center;
     flex: 20%;
     height: 40px;
 
