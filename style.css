@@ -4,7 +4,8 @@ body{
     background-color: black;
     border : 1px solid grey;
     border-radius: 10px;
-    
+
+
 }
 img.head{
     width : 30px;
@@ -23,15 +24,13 @@ h1{
     font-size : 15px;
 }
 #ecran{
-    border : 1 px solid grey;
+    border : 1px dashed grey;
     width : 295px;
     height: 90px;
     margin-top : 20px;
     margin-bottom: 15px;
     margin-left: 15px;
-    
-    border-style:dashed;
-    color : white; 
+    color : white;
 }
 
 
@@ -49,6 +48,7 @@ h1{
     /*flex-basis: 50px;*/
     
 
+
 }
 button{
     display : flex;
@@ -59,7 +59,7 @@ button{
     justify-content: center;
     flex : 20%;
     height : 40px;
-    
+
 }
 #egal{
     background-color: rgb(87, 162, 181);
