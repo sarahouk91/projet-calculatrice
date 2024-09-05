@@ -33,6 +33,8 @@ h1 {
 }
 
 #ecran {
+    width: 93%;
+    overflow: hidden;
     border: 1px dashed grey;
     height: 90px;
     margin-top: 20px;
