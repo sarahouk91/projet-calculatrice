@@ -3,15 +3,15 @@ let touches = document.querySelectorAll("button");
 let egal = document.getElementById("egal");
 
 
-let operation ='';
-let resultat='';
+let operation = '';
+let resultat = '';
 
-//ecran.textContent = `coucou`; 
+//ecran.textContent = `coucou`;
 console.log("HELLO WORLD");
 
 
 //addEventListener
-//test : 
+//test :
 /*function test (){
         prompt("Quel ets chepaquoi");
 }*/
@@ -36,8 +36,8 @@ let point = document.getElementById("point");
 let zero = document.getElementById("zero");
 let egual = document.getElementById("egal");
 
-seven.addEventListener("click", function(){
-        alert("7");
-        //ecran.innerHTML = "7";
+seven.addEventListener("click", function () {
+    alert("7");
+    //ecran.innerHTML = "7";
 });
 
