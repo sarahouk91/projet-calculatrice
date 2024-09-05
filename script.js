@@ -1,43 +1,50 @@
-let ecran = document.querySelector(".ecran");
-let touches = document.querySelectorAll("button");
-let egal = document.getElementById("egal");
-
-
 let operation = '';
-let resultat = '';
+let resultat = 0;
 
-//ecran.textContent = `coucou`;
-console.log("HELLO WORLD");
+function ajouterEcran(text) {
+    const ecran = document.getElementById("ecran");
+    if (estUneOperation(ecran.textContent) || (ecran.textContent === resultat.toString() && operation === '')) {
+        ecran.textContent = "";
+    }
+    ecran.textContent = ecran.textContent + text;
+}
 
+function estUneOperation(text) {
+    return text === '+' || text === '-' || text === '*' || text === '/';
+}
 
-//addEventListener
-//test :
-/*function test (){
-        prompt("Quel ets chepaquoi");
-}*/
+function supprimerEcran() {
+    resultat = 0;
+    document.getElementById("ecran").textContent = "";
+}
 
-let leftp = document.getElementById("leftp");
-let rightp = document.getElementById("rightp");
-let del = document.getElementById("delete");
-let divide = document.getElementById("divide");
-let seven = document.getElementById("seven");
-let eight = document.getElementById("eight");
-let nine = document.getElementById("nine");
-let multiply = document.getElementById("multiply");
-let four = document.getElementById("four");
-let five = document.getElementById("five");
-let six = document.getElementById("six");
-let minus = document.getElementById("minus");
-let one = document.getElementById("one");
-let two = document.getElementById("two");
-let three = document.getElementById("three");
-let add = document.getElementById("add");
-let point = document.getElementById("point");
-let zero = document.getElementById("zero");
-let egual = document.getElementById("egal");
+function definirOperation(op) {
+    operation = op;
+    resultat = parseFloat(document.getElementById("ecran").textContent);
+    document.getElementById("ecran").textContent = op;
+}
 
-seven.addEventListener("click", function () {
-    alert("7");
-    //ecran.innerHTML = "7";
-});
-
+function calculer() {
+    switch (operation) {
+        case '+':
+            resultat += parseFloat(document.getElementById("ecran").textContent);
+            document.getElementById("ecran").textContent = resultat;
+            break;
+        case '-':
+            resultat -= parseFloat(document.getElementById("ecran").textContent);
+            document.getElementById("ecran").textContent = resultat;
+            break;
+        case '/':
+            resultat /= parseFloat(document.getElementById("ecran").textContent);
+            document.getElementById("ecran").textContent = resultat;
+            break;
+        case '*':
+            console.log(resultat, parseFloat(document.getElementById("ecran").textContent), resultat * parseFloat(document.getElementById("ecran").textContent))
+            resultat *= parseFloat(document.getElementById("ecran").textContent);
+            document.getElementById("ecran").textContent = resultat;
+            break;
+        default:
+            document.getElementById("ecran").textContent = "Erreur";
+    }
+    operation = '';
+}
