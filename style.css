@@ -35,6 +35,10 @@ h1 {
     margin-bottom: 15px;
     margin-left: 15px;
     color: white;
+    font-size: xxx-large;
+    display: flex;
+    align-items: end; /* Mettre à la fin de la ligne verticale */
+    justify-content: end; /* Mettre à la fin de la ligne horizontale */
 }
 
 
