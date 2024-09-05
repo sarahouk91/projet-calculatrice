@@ -1,0 +1,66 @@
+body{
+    width: 320px;
+    height: 470px;
+    background-color: black;
+    border : 1px solid grey;
+    border-radius: 10px;
+    
+}
+img.head{
+    width : 30px;
+    height:auto;
+}
+.header{
+    display : flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size : 15px;
+}
+#ecran{
+    border : 1 px solid grey;
+    width : 295px;
+    height: 90px;
+    margin-top : 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    
+    border-style:dashed;
+    color : white; 
+}
+
+
+
+.touches{
+    margin : 10px;
+    margin-top: 60px;
+    display:flex;
+    /*display : grid;*/
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 5px;
+
+    /*flex-basis: 50px;*/
+    
+
+}
+button{
+    display : flex;
+    border-radius : 5px;
+    border-style:inherit;
+    color : white;
+    background-color: rgb(84, 83, 83);
+    justify-content: center;
+    flex : 20%;
+    height : 40px;
+    
+}
+#egal{
+    background-color: rgb(87, 162, 181);
+}
